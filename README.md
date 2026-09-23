@@ -17,7 +17,7 @@ Requires Python 3 and NumPy, SciPy, and Plotly:
 
 ```bash
 python3 -m pip install numpy scipy plotly
-python3 verify_stl_subset.py "Pig C2-C5.stl" "Pig C3-C4.stl"
+python verify_stl_subset.py "original.stl" "extract_from_original.stl"
 ```
 
 The script reports exact triangle matches, nearest original-vertex distances, mesh coverage, and bounding boxes. It writes `Pig C3-C4_verify.html`, showing the rest of the original mesh in gray, matching subset triangles in green, and any unmatched triangles in red. The generated HTML loads Plotly from a CDN, so an internet connection is needed to view it.
